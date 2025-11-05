@@ -1,0 +1,112 @@
+/* ===== STATS OVERVIEW SECTION ===== */
+.stats-section {
+  background: #f9fafb;
+  padding: 3rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  /* margin: 3rem auto; */
+  max-width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.stats-section h2 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* ===== GRID (3 per row) ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* ===== CARD STYLE ===== */
+.stat-card {
+  background: #ffffff;
+  padding: 2.2rem 1.6rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.stat-card span {
+  font-size: 2.8rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.stat-card h3 {
+  font-size: 1.9rem;
+  margin: 0;
+  font-weight: 700;
+  color: #111827;
+}
+
+.stat-card p {
+  font-size: 1.05rem;
+  color: #555;
+  margin-top: 0.4rem;
+  font-weight: 500;
+}
+
+/* Hover animation */
+.stat-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== COLOR THEMES ===== */
+.stat-card.blue {
+  border-top: 5px solid #2563eb;
+}
+
+.stat-card.green {
+  border-top: 5px solid #10b981;
+}
+
+.stat-card.orange {
+  border-top: 5px solid #f59e0b;
+}
+
+.stat-card.purple {
+  border-top: 5px solid #8b5cf6;
+}
+
+.stat-card.red {
+  border-top: 5px solid #ef4444;
+}
+
+.stat-card.yellow {
+  border-top: 5px solid #facc15;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-card {
+    padding: 1.8rem 1.2rem;
+  }
+
+  .stat-card span {
+    font-size: 2.4rem;
+  }
+
+  .stat-card h3 {
+    font-size: 1.6rem;
+  }
+}

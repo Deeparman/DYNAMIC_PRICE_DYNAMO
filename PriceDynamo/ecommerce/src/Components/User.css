@@ -1,0 +1,87 @@
+/* ===== USERS PAGE ===== */
+.users-page {
+  background: #f9fafb;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.users-page h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+/* ===== TABLE ===== */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.user-table th,
+.user-table td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+}
+
+.user-table th {
+  background: #e0e7ff;
+  color: #1e3a8a;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.user-table td {
+  font-size: 0.95rem;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+/* Row hover effect */
+.user-table tbody tr:hover {
+  background: #f9fafb;
+  transition: background 0.3s ease;
+}
+
+/* ===== ADDITIONAL TOUCHES ===== */
+.user-table td:first-child {
+  font-weight: 600;
+  color: #1e40af;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .user-table {
+    font-size: 0.85rem;
+  }
+
+  .user-table th,
+  .user-table td {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .user-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .users-page {
+    padding: 2rem 1rem;
+  }
+
+  .users-page h2 {
+    font-size: 1.6rem;
+  }
+}

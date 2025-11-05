@@ -1,0 +1,120 @@
+/* ===== SIMULATION PAGE ===== */
+.simulation-page {
+  background: #f9fafb;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 3rem auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* ===== HEADER ===== */
+.simulation-page h2 {
+  font-size: 2.2rem;
+  color: #1e3a8a;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* ===== FORM ===== */
+.simulation-form {
+  background: #ffffff;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ===== FORM GROUP ===== */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.6rem;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #111827;
+  transition: all 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+  outline: none;
+}
+
+/* ===== BUTTON ===== */
+.update-btn {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.update-btn:hover {
+  background: linear-gradient(135deg, #1e40af, #1d4ed8);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .simulation-page {
+    margin: 2rem 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .simulation-page h2 {
+    font-size: 1.8rem;
+  }
+
+  .simulation-form {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .simulation-page {
+    padding: 1.5rem 1rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 0.8rem;
+  }
+
+  .update-btn {
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+}

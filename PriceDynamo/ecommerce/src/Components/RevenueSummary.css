@@ -1,0 +1,94 @@
+/* ===== REVENUE SUMMARY SECTION ===== */
+.revenue-summary {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #1e293b;
+}
+
+/* ===== HEADING ===== */
+.revenue-summary h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 2.5rem;
+}
+
+/* ===== GRID OF CARDS ===== */
+.revenue-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== CARD DESIGN ===== */
+.rev-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.rev-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+.rev-card h3 {
+  font-size: 1.2rem;
+  color: #111827;
+  margin-bottom: 0.8rem;
+}
+
+.rev-card p {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1e293b;
+}
+
+/* ===== GROWTH CARD COLORS ===== */
+.rev-card.growth.positive p {
+  color: #10b981; /* green for growth */
+}
+
+.rev-card.growth.negative p {
+  color: #ef4444; /* red for drop */
+}
+
+/* ===== NOTE TEXT ===== */
+.note {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 992px) {
+  .revenue-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .revenue-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .rev-card {
+    padding: 1.8rem 1.2rem;
+  }
+
+  .rev-card p {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,89 @@
+/* ===== ADMIN NAVBAR ===== */
+.admin-navbar {
+  width: 100%;
+  max-width: 100vw; /* ensures no overflow */
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box; /* prevents padding overflow */
+  overflow-x: hidden; /* just in case */
+}
+
+/* Brand name */
+.brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+
+/* Actions container */
+.admin-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+/* Common button style */
+.nav-btn {
+  background: #ffffff;
+  color: #1e3a8a;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Hover effect */
+.nav-btn:hover {
+  background: #f1f5f9;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.25);
+}
+
+/* Logout button */
+.logout {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+.logout:hover {
+  background: #b91c1c;
+  box-shadow: 0 3px 10px rgba(220, 38, 38, 0.35);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .admin-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 1rem;
+  }
+
+  .admin-nav-actions {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.6rem;
+  }
+
+  .nav-btn {
+    flex: 1;
+  }
+}

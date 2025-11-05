@@ -1,0 +1,117 @@
+
+.navbar-home {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.nav-container-home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-name-home {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2563eb; /* Accent color */
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.brand-name-home:hover {
+  color: #1e40af;
+}
+
+
+.nav-links-home {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-btn-home {
+  font-family: "Poppins", sans-serif;
+  background: transparent;
+  border: 2px solid transparent;
+  color: #1e293b;
+  font-size: 0.95rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-btn-home:hover {
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.08);
+  transform: translateY(-2px);
+}
+
+
+.login-btn-home {
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+  padding: 0.55rem 1.2rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.login-btn-home:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(37, 99, 235, 0.25);
+}
+
+@media (max-width: 900px) {
+  .nav-container-home {
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+
+  .brand-name-home {
+    font-size: 1.3rem;
+  }
+
+  .nav-links-home {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-btn-home {
+    font-size: 0.9rem;
+    padding: 0.45rem 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-container-home {
+    padding: 0.7rem 1rem;
+  }
+
+  .brand-name-home {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+  .nav-links-home {
+    gap: 0.6rem;
+  }
+
+  .nav-btn-home,
+  .login-btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

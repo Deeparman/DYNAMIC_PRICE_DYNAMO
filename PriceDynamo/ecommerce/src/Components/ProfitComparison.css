@@ -1,0 +1,118 @@
+/* ===== PROFIT COMPARISON SECTION ===== */
+.profit-comparison {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #1e293b;
+}
+
+/* ===== HEADING ===== */
+.profit-comparison h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 2.5rem;
+}
+
+/* ===== PROFIT CARDS LAYOUT ===== */
+.profit-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+/* ===== CARD STYLE ===== */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 2rem 1.5rem;
+  flex: 1 1 250px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #111827;
+  margin-bottom: 0.8rem;
+}
+
+.card p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ===== POSITIVE / NEGATIVE CHANGE ===== */
+.card.positive p {
+  color: #10b981; /* green */
+}
+
+.card.negative p {
+  color: #ef4444; /* red */
+}
+
+/* ===== RECENT UPDATES LIST ===== */
+.profit-comparison h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 1rem;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.history-list li {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.history-list li:hover {
+  transform: translateX(4px);
+}
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .profit-comparison {
+    padding: 2.2rem 1rem;
+  }
+
+  .profit-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .history-list li {
+    font-size: 0.9rem;
+  }
+}

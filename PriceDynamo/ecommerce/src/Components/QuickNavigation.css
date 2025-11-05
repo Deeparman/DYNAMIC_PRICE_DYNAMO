@@ -1,0 +1,69 @@
+/* ===== QUICK NAVIGATION SECTION ===== */
+.quick-nav {
+  background: #f9fafb;
+  padding: 2.5rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  /* margin: 2rem auto; */
+  max-width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Heading */
+.quick-nav h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+/* Links container */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Nav cards (buttons) */
+.nav-card {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  padding: 1.2rem 2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.25);
+  width: 180px;
+  text-align: center;
+}
+
+/* Hover effect */
+.nav-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 22px rgba(37, 99, 235, 0.35);
+  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .quick-nav {
+    padding: 2rem 1rem;
+  }
+
+  .nav-card {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}

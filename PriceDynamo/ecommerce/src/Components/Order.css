@@ -1,0 +1,102 @@
+/* ===== ORDERS PAGE ===== */
+.orders-page {
+  background: #f9fafb;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.orders-page h2 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+/* ===== TABLE STYLING ===== */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 1rem 1.2rem;
+  text-align: center;
+}
+
+.orders-table th {
+  background: #e0e7ff;
+  color: #1e3a8a;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.orders-table td {
+  color: #374151;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* ===== STATUS COLORS ===== */
+.status {
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  display: inline-block;
+  color: white;
+}
+
+.status.delivered {
+  background: #10b981; /* green */
+}
+
+.status.pending {
+  background: #f59e0b; /* yellow */
+}
+
+.status.shipped {
+  background: #3b82f6; /* blue */
+}
+
+/* ===== HOVER EFFECT ===== */
+.orders-table tbody tr:hover {
+  background: #f9fafb;
+  transition: background 0.3s ease;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .orders-table {
+    font-size: 0.85rem;
+  }
+
+  .orders-table th,
+  .orders-table td {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .orders-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .orders-page {
+    padding: 2rem 1rem;
+  }
+
+  .orders-page h2 {
+    font-size: 1.6rem;
+  }
+}
